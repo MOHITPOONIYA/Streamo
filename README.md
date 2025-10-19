@@ -35,10 +35,54 @@ Streamo is a real-time video and audio conferencing application that allows user
 -   **bcrypt**: A library for hashing user passwords before storing them in the database.
 
 ## Project Structure
+Streamo/
+├── .gitignore
+├── Backend/
+│   ├── controllers/
+│   │   ├── socketManager.js
+│   │   └── user.controller.js
+│   ├── models/
+│   │   ├── meeting.model.js
+│   │   └── user.model.js
+│   ├── routes/
+│   │   └── users.routes.js
+│   └── app.js
+│
+├── Frontend/
+│   ├── public/
+│   │   ├── background.png
+│   │   ├── logo3.png
+│   │   ├── mobile.png
+│   │   └── vite.svg
+│   │
+│   ├── src/
+│   │   ├── contexts/
+│   │   │   └── AuthContext.jsx
+│   │   ├── pages/
+│   │   │   ├── Authentication.jsx
+│   │   │   ├── History.jsx
+│   │   │   ├── Home.jsx
+│   │   │   ├── Landing.jsx
+│   │   │   └── VideoMeet.jsx
+│   │   ├── styles/
+│   │   │   └── videoComponent.module.css
+│   │   ├── utils/
+│   │   │   └── withAuth.jsx
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── environment.js
+│   │   └── main.jsx
+│   │
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── README.md
+│   └── vite.config.js
+│
+└── README.md
 
-Here is the file and directory layout for the project:
-
-Streamo/ │ ├── .gitignore │ ├── Backend/ │ ├── controllers/ │ │ ├── socketManager.js │ │ └── user.controller.js │ ├── models/ │ │ ├── meeting.model.js │ │ └── user.model.js │ ├── routes/ │ │ └── users.routes.js │ └── app.js │ └── Frontend/ ├── public/ │ ├── background.png │ ├── logo3.png │ ├── mobile.png │ └── vite.svg ├── src/ │ ├── contexts/ │ │ └── AuthContext.jsx │ ├── pages/ │ │ ├── Authentication.jsx │ │ ├── History.jsx │ │ ├── Home.jsx │ │ ├── Landing.jsx │ │ └── VideoMeet.jsx │ ├── styles/ │ │ └── videoComponent.module.css │ ├── utils/ │ │ └── withAuth.jsx │ ├── App.css │ ├── App.jsx │ ├── environment.js │ └── main.jsx ├── .gitignore ├── eslint.config.js ├── index.html ├── package.json ├── package-lock.json ├── README.md └── vite.config.js
 
 ## Getting Started
 
