@@ -1,10 +1,10 @@
 import './App.css';
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
-import LandingPage from './pages/landing';
-import Authentication from './pages/authentication';
-import { AuthProvider } from './contexts/AuthContext';
-import VideoMeetComponent from './pages/VideoMeet';
-import HomeComponent from './pages/home';
+import LandingPage from './pages/Landing.jsx';
+import Authentication from './pages/Authentication.jsx';
+import { AuthProvider } from './contexts/AuthContext.jsx';
+import VideoMeetComponent from './pages/VideoMeet.jsx';
+import HomeComponent from './pages/Home.jsx';
 import History from './pages/History.jsx';
 
 function App() {
