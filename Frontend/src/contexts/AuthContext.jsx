@@ -3,7 +3,10 @@ import httpStatus from "http-status";
 import { createContext, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const server = "http://localhost:8000";
+import server from "../environment.js"
+
+
+
 
 export const AuthContext = createContext({});
 
