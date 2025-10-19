@@ -164,31 +164,10 @@ Example `package.json` build script to copy `dist` to `build`:
 }
 ```
 
----
-
-## Troubleshooting common issues
-
-* **Import not found on Render / Linux**: Check filename case and that the file exists at the expected path. Use `ls -la src/pages` locally or in CI logs. To force a case-only rename:
-
-```bash
-git mv src/pages/Landing.jsx src/pages/_tmp.jsx
-git mv src/pages/_tmp.jsx src/pages/landing.jsx
-git commit -m "Fix filename case for landing component"
-git push
-```
-
-* **Render shows `Publish directory build does not exist`**: Change Render publish directory to `dist` or change Vite output to `build` as described above.
-
----
-
 ## Author
 
 **MOHITPOONIYA** — [GitHub](https://github.com/MOHITPOONIYA)
 
 ---
 
-If you want, I can now:
 
-* produce a small git patch you can apply to replace the existing `README.md`, or
-* generate the exact `vite.config.js` or `package.json` edit to fix the `dist` vs `build` issue, or
-* inspect `src/App.jsx` and `src/pages` listing to fix any case mismatches (paste the listing or I can read it for you).
